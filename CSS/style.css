@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin:50px 0px 30px 0px ;
+    text-align: center;
+    font-size: 40px;
+}
+header p{
+    font-size: 20px;
+}
+
+.pads{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1{
+    background: red;
+}
+.pad2{
+    background: greenyellow;
+}
+.pad3{
+    background: hotpink;
+}
+.pad4{
+    background: indigo;
+}
+.pad5{
+    background: lightblue;
+}
+.pad6{
+    background: lightgoldenrodyellow;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+
+    }
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+}
+  
